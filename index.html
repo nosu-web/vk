@@ -11,6 +11,12 @@
             height: 48px;
             margin-bottom: 10px;
         }
+        .wrapper-header {
+            width: 960px;
+            margin: auto;
+            display: flex;
+            justify-content:space-between;
+        }
         .wrapper {
             width: 960px;
             margin: auto;
@@ -36,7 +42,9 @@
         .navbar__logo {
             max-width: 200px;
             margin-top: 12px;
-            float: left;
+        }
+        .navbar__left {
+            display: flex;
         }
         .navbar__search {
             display: inline-block;
@@ -55,19 +63,28 @@
         .navbar__search-input:focus {
             box-shadow: 0px 10px rgba(0, 0, 0, .1);
         }
+        .navbar__menu-link {
+            display: block;
+            height: 48px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <header class="navbar">
-        <div class="wrapper">
-            <div class="navbar__logo">
-                <img src="images/logo.svg" alt="Вконтакте">
+        <div class="wrapper-header">
+            <div class="navbar__left">
+                <div class="navbar__logo">
+                    <img src="images/logo.svg" alt="Вконтакте">
+                </div>
+                <form action="" class="navbar__search">
+                    <input placeholder="Поиск" type="search" class="navbar__search-input" name="search-request" id="search-request">
+                </form>
             </div>
-            <form action="" class="navbar__search">
-                <input placeholder="Поиск" type="search" class="navbar__search-input" name="search-request" id="search-request">
-            </form>
             <div class="navbar__menu">
-                <a href="#">Switch to English</a>
+                <a href="#" class="navbar__menu-link">Switch to English</a>
             </div>
         </div>
     </header>
