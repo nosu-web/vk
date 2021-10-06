@@ -22,20 +22,21 @@
             margin: auto;
         }
         .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main {
             width: 620px;
             height: 700px;
             margin-right: 10px;
-            float: left;
             background-color: cyan;
         }
         .sidebar {
             width: 320px;
             height: 700px;
-            float: right;
             background-color: sandybrown;
         }
         .footer {
-            clear: both;
             background-color: slateblue;
             height: 20px;
         }
@@ -89,8 +90,10 @@
         </div>
     </header>
     <div class="wrapper">
-        <main class="content">main</main>
-        <aside class="sidebar">sidebar</aside>
+        <div class="content">
+            <main class="main">main</main>
+            <aside class="sidebar">sidebar</aside>
+        </div>
         <footer class="footer">footer</footer>
     </div>
 </body>
