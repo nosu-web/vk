@@ -33,7 +33,7 @@ body {
 .main__links-item {
     margin: 0px 28px;
 }
-.main__link {
+.page__link {
     color: #2a5885;
     text-decoration: none;
 }
@@ -71,6 +71,21 @@ body {
     width: 320px;
     height: 700px;
     background-color: sandybrown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar__block{
+    min-height: 100px;
+    background-color: #fff;
+    padding: 30px;
+}
+.page__input {
+    width: 100%;
+    height: 35px;
+}
+.page__button {
+
 }
 .footer {
     background-color: slateblue;
