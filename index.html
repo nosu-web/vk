@@ -3,82 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>VK</title>
-    <style>
-        body {
-            margin: 0;
-            background-color: #edeef0;
-        }
-        .navbar {
-            height: 48px;
-            margin-bottom: 10px;
-            background-color: #fff;
-        }
-        .wrapper-header {
-            width: 960px;
-            margin: auto;
-            display: flex;
-            justify-content:space-between;
-        }
-        .wrapper {
-            width: 960px;
-            margin: auto;
-        }
-        .content {
-            display: flex;
-            justify-content: space-between;
-        }
-        .main {
-            width: 620px;
-            height: 700px;
-            margin-right: 10px;
-            background-color: cyan;
-        }
-        .sidebar {
-            width: 320px;
-            height: 700px;
-            background-color: sandybrown;
-        }
-        .footer {
-            background-color: slateblue;
-            height: 20px;
-        }
-        .navbar__logo {
-            max-width: 200px;
-        }
-        .navbar__left {
-            display: flex;
-            align-items: center;
-        }
-        .navbar__search {
-            display: inline-block;
-            margin-left: 30px;
-        }
-        .navbar__search-input {
-            background-color: #edeef0;
-            border: 0;
-            border-radius: 8px;
-            outline: 0;
-            width: 230px;
-            height: 32px;
-            padding-left: 30px;
-        }
-        .navbar__search-input:focus {
-            box-shadow: 0px 10px rgba(0, 0, 0, .1);
-        }
-        .navbar__menu-link {
-            display: block;
-            line-height: 48px;
-            height: 48px;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
-            padding: 0px 10px;
-        }
-        .navbar__menu-link:hover {
-            background-color: #f5f6f8;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header class="navbar">
@@ -98,7 +26,21 @@
     </header>
     <div class="wrapper">
         <div class="content">
-            <main class="main">main</main>
+            <main class="main">
+                <h1 class="main__heading">Вконтакте для мобильных устройств</h1>
+                <p class="main__intro">Установите официальное мобильное приложение ВКонтакте и оставайтесь в курсе новостей ваших друзей, где бы вы ни находились.</p>
+                <div class="main__images">
+                    <img src="images/phone.png" alt="" class="main__images-left">
+                    <img src="images/phone2.png" alt="" class="main__images-right">
+                </div>
+                <div class="main__links">
+                    <a href="#" class="main__links-item">VK для Android</a>
+                    <a href="#" class="main__links-item">VK для IOS</a>
+                </div>
+                <div class="main__links-more">
+                    <a href="#" class="main__links-moreitem">Все продукты</a>
+                </div>
+            </main>
             <aside class="sidebar">sidebar</aside>
         </div>
         <footer class="footer">footer</footer>
