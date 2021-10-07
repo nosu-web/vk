@@ -3,6 +3,43 @@ body {
     margin: 0;
     background-color: #edeef0;
     font-family: 'Roboto', sans-serif;
+
+}
+.main__heading {
+    font-size: 22px;
+    text-align: center;
+}
+.main__intro {
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 20px;
+}
+.main__images {
+    display: flex;
+    justify-content: center;
+}
+.main__images-left {
+    margin-left: 20px;
+
+}
+.main__images-right {
+    margin-left: -20px;
+}
+.main__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.main__links-item {
+    margin: 0px 28px;
+}
+.main__link {
+    color: #2a5885;
+    text-decoration: none;
+}
+.main__links-more {
+    text-align: center;
+    margin-top: 20px;
 }
 .navbar {
     height: 48px;
