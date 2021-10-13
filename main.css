@@ -143,3 +143,9 @@ body {
 .navbar__menu-link:hover {
     background-color: #f5f6f8;
 }
+.sidebar__heading {
+    margin: 0px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: normal;
+}

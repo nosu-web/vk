@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>VK</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -59,6 +60,33 @@
                 </div>
                 <div class="sidebar__block sidebar__form-reg ">
 
+                    <div class="form_row">
+
+                        <h2 class="sidebar__heading"> Впервые вконтакте? </h2> 
+                    </div>
+                    <form action="" class="sidebar__form-login">
+                        <div class="form_row">
+                            <input type="text" name="login" id="input_login" class="page__input" placeholder="Ваше имя">
+                        </div>
+                        <div class="form_row">
+                            <input type="text" name="password" id="input_password" class="page__input" placeholder="Ваша фамилия ">
+                        </div>
+                        <div class="form_row">
+                            <select name="day" id="birth_day">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <select name="month" id="birth_month">
+                                <option disabled selected>Месяц</option>
+                                <option value="1">Январь</option>
+                                <option value="2">Февраль</option>
+                                <option value="3">Март</option>
+                            </select>
+                            <select name="year" id="birth_year"></select>
+                           
+                        </div>
+                    </form>
                 </div>
                 <div class="sidebar__block sidebar__form-help">
 
