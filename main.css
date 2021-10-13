@@ -85,8 +85,14 @@ body {
     height: 35px;
 }
 .page__button {
-
+    width: 100px;
+    padding: 10px 15px;
 }
+
+.form_row {
+    margin: 10px 0px;
+}
+
 .footer {
     background-color: slateblue;
     height: 20px;
