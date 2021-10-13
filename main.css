@@ -85,6 +85,7 @@ body {
     height: 35px;
     border-radius: 2px;
     border: 1px solid gainsboro; 
+    padding-left: 10px;
 }
 .page__button {
     width: 100px;
@@ -99,7 +100,9 @@ body {
 .form_row {
     margin: 0px 0px 20px 0px;
 }
-
+.sidebar__form-login .form_row:last-child {
+    margin-bottom: 0px;
+}
 .footer {
     background-color: slateblue;
     height: 20px;
