@@ -66,9 +66,11 @@ body {
 /* Header */
 .wrapper-header {
     width: 960px;
+    height: 100%;
     margin: auto;
     display: flex;
     justify-content:space-between;
+    align-items: center;
 }
 .navbar {
     height: 48px;
@@ -190,4 +192,43 @@ body {
 .footer {
     height: 20px;
     color: gray;
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .main {
+        display: none;
+    }
+    .wrapper-header {
+        max-width: 320px;
+    }
+    .navbar__logo {
+        align-self: f
+    }
+    .navbar__search {
+        display: none;
+    }
+    .navbar__menu {
+        display: none;
+    }
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .sidebar__block {
+        max-width: 320px;
+        margin: 20px auto;
+        box-sizing: border-box;
+    }
+    .form-input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .footer {
+        max-width: 320px;
+        margin: 10px auto;
+    }
 }
