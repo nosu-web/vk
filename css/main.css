@@ -195,12 +195,15 @@ body {
 }
 
 /* Mobile devices */
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+    body {
+        max-width: 100%;
+    }
     .main {
         display: none;
     }
     .wrapper-header {
-        max-width: 320px;
+        margin: 0px 60px;
     }
     .navbar__logo {
         align-self: f
@@ -213,7 +216,10 @@ body {
     }
     .wrapper {
         width: 100%;
-        margin: 0 auto;
+    }
+    .wrapper-header{
+        max-width: 57%;
+        margin: 0px 180px;
     }
     .sidebar {
         width: 100%;
@@ -230,5 +236,87 @@ body {
     .footer {
         max-width: 320px;
         margin: 10px auto;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px){
+    body {
+        max-width: 100%;
+    }
+    .main {
+        display: none;
+    }
+    .sidebar__block {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+    .wrapper {
+        max-width: 50%;
+        margin: 0px 25%;
+    }
+    .wrapper-header {
+        padding: 0px 20px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar__menu-link {
+        font-size: 100%;
+        line-height: 0px;
+        height: 50%;
+        padding-left: 40px;
+        padding-right: 0px;
+    }
+    .sidebar {
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    body {
+        max-width: 100%;
+    }
+    .content {
+        justify-content: space-around;
+    }
+    .main {
+        width: 50%;
+    }
+    .main__heading {
+        font-size: 20px;
+        text-align: center;
+    }
+    .main__intro {
+        font-size: 15px;
+        text-align: center;
+        padding: 0px 20px;
+        color: gray;
+    }
+    .main__images-left {
+        margin-left: 20px;
+        width: 50%;
+    }
+    .main__images-right {
+        margin-left: -20px;
+        width: 50%;
+    }
+    .wrapper {
+        max-width: 100%;
+        margin: auto;
+    }
+    .wrapper-header {
+        padding: 0px 20px;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar__menu-link {
+        font-size: 100%;
+        line-height: 0px;
+        height: 50%;
+        padding-left: 40px;
+        padding-right: 0px;
     }
 }
