@@ -1,1 +1,1 @@
-#vk main page adaptive layout
+#vk main page responsive layout
