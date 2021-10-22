@@ -231,4 +231,55 @@ body {
         max-width: 320px;
         margin: 10px auto;
     }
+        /* Planshet devices */
+        @media (min-width:768px) and (max-width:1024px) {
+            .main {
+            display: none; }
+        
+            .wrapper-header {
+            max-width: 320px;}
+        
+            .navbar__logo {
+            align-self: f}
+        
+            .navbar__search {
+            display: none;
+            }
+        
+            .navbar__menu {
+            display: none;
+            }
+        
+            .wrapper {
+            width: 100%;
+            margin: 0 auto;
+            }
+        
+            .sidebar {
+            margin-top: 13px;
+            width: 100%;
+            }
+        
+            .sidebar__block {
+            max-width: 550px;
+            margin: 20px auto;
+            box-sizing: border-box;
+            }
+        
+            .form-input {
+            width: 100%;
+            box-sizing: border-box;
+            }
+        
+            .footer {
+            max-width: 320px;
+            margin: 10px auto;
+            }
+        
+            .form-select{
+            width: 150px;
+            padding-left: 15px;
+            height: 38px;
+            padding-left: 11px;
+       }
 }
