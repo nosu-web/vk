@@ -232,3 +232,49 @@ body {
         margin: 10px auto;
     }
 }
+/* tablet devices */
+@media only screen and (max-width: 1000px ) and (min-width: 768px) {
+    .main {
+    display: none;
+    }
+    .wrapper-header {
+    max-width: 600px;
+    justify-content: center;
+    }
+    .navbar__logo {
+    align-self: f
+    }
+    .navbar__search {
+    display: none;
+    }
+    .navbar__menu {
+    display: none;
+    }
+    .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    }
+    .sidebar {
+    width: 100%;
+    }
+    .sidebar__block {
+    max-width: 600px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    }
+    .form-input {
+    width: 100%;
+    box-sizing: border-box;
+    }
+    .form-select{
+    width: 30%;
+    }
+    .form-button{
+    width: 245px;
+    margin: 0px 68.5px 0px 0px;
+    }
+    .footer {
+    max-width: 550px;
+    margin: 10px auto;
+    }
+    }
