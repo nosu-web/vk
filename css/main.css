@@ -234,9 +234,26 @@ body {
 }
 
 @media (min-width: 768px) and (max-width:1024px){
-
+        .main{
+            display: none;
+        }
+        .sidebar{
+            margin:auto;
+        }
+        .wrapper{
+            max-height: none;
+            height: 800px;
+        }
+        .sidebar__form-login{
+            width: 90%;
+        }
+        .sidebar{
+            width: 40%;
+        }
+        .sidebar__block{
+            min-width: 120%;
+        }
 }
-
 @media (min-width: 1280px){
 
 }
