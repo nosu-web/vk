@@ -15,7 +15,7 @@ if(password=null)
 {
 window.setTimeout(function(){
     password.classList.add('form-inpur-empty');
-},500);
+},5000);
 password.classList.remove('form-input');
 }
 console.log(3);
