@@ -1,5 +1,5 @@
 const entering=document.querySelector("#entering");
-const registration=document.querySelector("#registration");
+
 
 entering.addEventListener("click", function(){
 let name=document.querySelector("#input_login.form-input")
@@ -7,9 +7,9 @@ let password=document.querySelector("#input_password.form-input")
 if(name=null)
 {
 window.setTimeout(function(){
-    entering.classList.add('form-inpur-empty');
+    input_login.classList.add('form-inpur-empty');
 },5000);
-entering.classList.remove('form-input');
+input_login.classList.remove('form-input');
 }
 if(password=null)
 {
@@ -21,6 +21,9 @@ password.classList.remove('form-input');
 console.log(3);
 })
 
+
+
+const registration=document.querySelector("#registration");
 
 registration.addEventListener("click", function(){
     
