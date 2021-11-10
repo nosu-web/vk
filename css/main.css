@@ -161,12 +161,30 @@ body {
 }
 .sidebar__form-login .form-row:last-child {
     margin-bottom: 0px;
+    
 }
+
+
+
+.form-input.red {
+   background-color: white;
+   animation-name: col;
+   animation-duration: 3s;
+}
+
+@keyframes col {
+    0%   {background-color:white;}
+    25% {background-color:#f1e1e1;}
+    50% {background-color: #f1e1e1;}
+    100% {background-color: white;}
+  }
+
+
 .sidebar__heading {
     margin: 0px;
     text-align: center;
     font-size: 21px;
-    font-weight: normal;
+    font-weight: normal;      
 }
 .sidebar__subheading {
     color: gray;
