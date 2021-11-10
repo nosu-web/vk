@@ -18,6 +18,7 @@ window.setTimeout(function(){
 },500);
 password.classList.remove('form-input');
 }
+console.log(3);
 })
 
 
