@@ -50,13 +50,13 @@
                 <div class="sidebar__block">
                     <form action="" class="sidebar__form-login">
                         <div class="form-row">
-                            <input type="email" name="login" id="input_login" class="form-input" placeholder="Телефон или email">
+                            <input type="email" name="login" id="authorization_input_login" class="form-input" placeholder="Телефон или email">
                         </div>
                         <div class="form-row">
-                            <input type="password" name="password" id="input_password" class="form-input" placeholder="Пароль">
+                            <input type="password" name="password" id="authorization_input_password" class="form-input" placeholder="Пароль">
                         </div>
                         <div class="form-row">
-                            <button type="submit" class="form-button">Войти</button>
+                            <button onclick="return false" type="submit" class="form-button">Войти</button>
                             <a href="http://" class="page-link"> Забыли пароль?</a>
                         </div>
                     </form>
@@ -112,6 +112,8 @@
             <a href="https://vk.com" class="page-link">ВКонтакте</a> &copy; 2006–2021
         </footer>
     </div>
+
+    <script src="vova.js"></script>
 </body>
 
 </html>
