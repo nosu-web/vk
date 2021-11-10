@@ -8,7 +8,7 @@ if(name=null)
 {
 window.setTimeout(function(){
     entering.classList.add('form-inpur-empty');
-},500);
+},5000);
 entering.classList.remove('form-input');
 }
 if(password=null)
