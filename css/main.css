@@ -50,6 +50,9 @@ body {
     border: 0px;
     border-radius: 3px;
 }
+.input-warning {
+    background-color: rgba(255, 0, 0, 0.1);
+}
 
 /* Page blocks */
 .content {

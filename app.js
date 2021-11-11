@@ -1,19 +1,23 @@
-let signInButton=document.getElementById("form-sign-in"); 
-let intputLoging=document.getElementById("input_login");
-let intputPassword=document.getElementById("input_password");
-console.log("click");
-signInButton.addEventListener("click",function(){
-    console.log("click");
-    if(intputLoging.value=="")
-    {
-       console.log("click");
-       intputLoging.style.backgroundColor="#f1e1e1";
-       setTimeout(() => { intputLoging.style.backgroundColor=' #ffffff'; }, 400);
-    }
-   else if(intputPassword.value=="")
-    {
-        console.log("click");
-        intputPassword.style.backgroundColor='#f1e1e1';
-       setTimeout(() => { intputPassword.style.backgroundColor=' #ffffff'; }, 400);
+$( document ).ready(function() { // Когда документ загружен
+    const formLogin = $( ".sidebar__form-login" );
+    const submitButton = $( "#form-sign-in" );
+    const inputLogin = $( "#input_login" );
+    const inputPassword = $( "#input_password" );
+
+    $( submitButton ).click(function(event) {
+        event.preventDefault();
+        if(!inputLogin.val())
+            inputWarning(inputLogin);
+        else if (!inputPassword.val())
+            inputWarning(inputPassword);
+        else
+            formLogin.submit();
+    });
+
+    function inputWarning(inputElement) {
+        inputElement.addClass('input-warning');
+        setTimeout(function () {
+            inputElement.removeClass("input-warning");
+        }, 500);
     }
 });
